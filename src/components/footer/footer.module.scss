@@ -1,0 +1,53 @@
+@import "../../styles/_vars";
+
+.footerContainer {
+  height: 6rem;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black-bg;
+}
+
+.textFooter {
+  color: $white-text;
+}
+
+.soscialMediaIconsRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoContainer,
+.logoTwitterContainer,
+.logoFbContainer,
+.logoYtVontainer {
+  height: 0rem;
+  width: 0rem;
+  padding: 1rem;
+  border-radius: 4px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  background-color: #68ADF3;
+}
+
+.logoTwitterContainer {
+  background-color: #48AAF6;
+}
+
+.logoFbContainer{
+  background-color: #3A57A5;  
+}
+
+.logoYtVontainer {
+  background-color: #A72822;
+}
+
+.logoIcon {
+  margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+@import "../../styles/_vars";
+
+.headerContainer {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black-bg;
+  border-bottom: solid 2px $border-red;
+}
+
+.imgSize {
+  width: 6rem;
+  margin-top: 6px;
+}
+
+@media screen and (min-width: '768px') {
+  .headerContainer {
+    padding: 0 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black-bg;
+  }
+}

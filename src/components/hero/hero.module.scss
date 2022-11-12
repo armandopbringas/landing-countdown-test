@@ -1,0 +1,63 @@
+@import "../../styles/_vars";
+
+.hero {
+  background-image: url('../../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heroTextContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.heroTitle {
+  color: $white-text;
+}
+
+.heroTimerContainer {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.circle {
+  border: 2px solid $white-text;
+  height: 75px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width: 75px;
+  color: $white-text;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.number {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 55%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: '768px') {
+  .number {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
