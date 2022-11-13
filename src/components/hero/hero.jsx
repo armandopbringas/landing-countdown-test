@@ -1,8 +1,15 @@
-import React from 'react';
+import { useState } from 'react';
 import heroImage from '../../assets/hero-img.png';
-import styles from './hero.module.scss'
+import CountDownTimer from '../ConuntDownTimer/CountDownTimer';
+import styles from './hero.module.scss';
 
 const Hero = () => {
+  const decemberFirstInMs = 18 * 24 * 60 * 60 * 1000;
+  const nowInMs = new Date().getTime();
+
+  const dateTimeAfterThreeDays = nowInMs + decemberFirstInMs;
+  const [targetDate, setTargetDate] = useState(new Date(dateTimeAfterThreeDays));
+
   return (
     <div className={styles.hero}>
       <div className={styles.heroTextContainer}>
@@ -10,22 +17,7 @@ const Hero = () => {
           Faltan
         </h2>
         <div className={styles.heroTimerContainer}>
-          <div className={styles.circle}>
-            <p className={styles.number}>00</p>
-            <span>Días</span>
-          </div>
-          <div className={styles.circle}>
-            <p className={styles.number}>00</p>
-            <span>Hrs</span>
-          </div>
-          <div className={styles.circle}>
-            <p className={styles.number}>00</p>
-            <span>Min.</span>
-          </div>
-          <div className={styles.circle}>
-            <p className={styles.number}>00</p>
-            <span>Seg</span>
-          </div>
+          <CountDownTimer targetDate={targetDate} />
         </div>
         <img 
           alt='hero'

@@ -20,7 +20,7 @@ const VideoSection = () => {
               className={styles.videoImgCircle}
             />
           </picture>
-          <span>TEAM LATAM</span>
+          <p>TEAM LATAM</p>
         </div>
         <div className={styles.videoCircle}>
           <picture>
@@ -30,7 +30,7 @@ const VideoSection = () => {
               className={styles.videoImgCircle}
             />
           </picture>
-          <span>TRAVEL MEETS FASSHION</span>
+          <p>TRAVEL MEETS FASSHION</p>
         </div>
         <div className={styles.videoCircle}>
           <picture>

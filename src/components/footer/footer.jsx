@@ -3,6 +3,8 @@ import styles from './footer.module.scss';
 import footerLogo from '../../assets/logo-sochi-color.png';
 import mobilIcon from '../../assets/mobli-icon.png';
 import twitterIcon from '../../assets/twitter.png';
+import facebookIcon from '../../assets/facebook.png';
+import youTubeIcon from '../../assets/youtube.png';
 
 const Footer = () => {
   return (
@@ -34,14 +36,14 @@ const Footer = () => {
         <picture className={styles.logoFbContainer}>
           <img
             alt=''
-            src={mobilIcon}
+            src={facebookIcon}
             className={styles.logoIcon}
           />
         </picture>
         <picture className={styles.logoYtVontainer}>
           <img
             alt=''
-            src={mobilIcon}
+            src={youTubeIcon}
             className={styles.logoIcon}
           />
         </picture>

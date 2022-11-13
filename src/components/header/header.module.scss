@@ -1,17 +1,30 @@
 @import "../../styles/_vars";
 
 .headerContainer {
+  height: 4.5rem;
   padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $black-bg;
-  border-bottom: solid 2px $border-red;
+  border-bottom: solid 3px $border-red;
+}
+
+.fixedTop {
+  width: 80%;
+  height: 4.5rem;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black-bg;
+  border-bottom: solid 3px $border-red;
+  position: fixed;
+  top: 0;
 }
 
 .imgSize {
-  width: 6rem;
-  margin-top: 6px;
+  width: 8rem;
 }
 
 @media screen and (min-width: '768px') {
@@ -22,4 +35,23 @@
     justify-content: space-between;
     background-color: $black-bg;
   }
+
+  .fixedTop {
+    width: 72%;
+    padding: 0 14%;
+    position: fixed;
+    top: 0;
+  }
+}
+
+.mainHeader {
+  padding: 12px 18px;
+  color: #fff;
+  text-align: center;
+}
+.main-block {
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
 }

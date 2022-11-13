@@ -1,29 +1,5 @@
 @import "../../styles/_vars";
 
-.hero {
-  background-image: url('../../assets/background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.heroTextContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 5%;
-}
-
-.heroTitle {
-  color: $white-text;
-}
-
-.heroTimerContainer {
-  display: flex;
-  margin-bottom: 2rem;
-  gap: 2%;
-}
-
 .circle {
   border: 2px solid $white-text;
   height: 75px;
@@ -46,11 +22,6 @@
   justify-content: center;
 }
 
-.heroImage {
-  width: 55%;
-  object-fit: contain;
-}
-
 @media screen and (min-width: '768px') {
   .number {
     margin: 0;
@@ -59,9 +30,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .heroTimerContainer {
-    gap: 1rem;
   }
 }
