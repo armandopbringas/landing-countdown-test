@@ -1,6 +1,6 @@
 # Frontend test
 
-###Para correr el proyecto se uso yarn como administrador de dependencias.
+### Para correr el proyecto se uso yarn como administrador de dependencias.
 
 Aquí los comando para correr el proyecto:
 
