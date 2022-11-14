@@ -1,5 +1,8 @@
 Frontend test
 
+El test está disponible en el siguiente enlace:
+https://landingcountdowntest.netlify.app/
+
 Requerimientos:
 
 - [x]  El header debe estar fijo en la parte superior
