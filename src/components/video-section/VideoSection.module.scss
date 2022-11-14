@@ -1,32 +1,119 @@
 @import "../../styles/_vars";
 
-.videoSectionContainer {
-  padding: 2rem;
-  background-color: #232323;
-}
-
 .videoSectionTitle {
+  margin-top: 3rem;
+  margin-bottom: 0;
   color: $white-text;
   font-weight: 400;
 }
 
-.videoCircle {
+.videoSectionContainer {
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-bottom: 2rem;
+  background-color: #232323;
+}
+
+.videoCircleContainer {
   text-align: center;
   color: $white-text;
 }
 
-.videoImgCircle {
+.videoCircle {
+  position: relative;
+  width: 160px;
+  height: 160px;
   border-radius: 100%;
 }
 
-.videoImgCircle:hover {
-  background-color: $border-red; 
+.videoImgCircle {
+  height: 300px;
+  z-index: -10;
+  clip-path: circle(150px at center);
 }
 
-@media screen and (min-width: '768px') {
-  .circleVideosContainer {
+.hoveredElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 15rem;
+  border-radius: 100%;
+  background-color: $border-red;
+}
+
+.hoveredElementTwo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.videoCircleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.videoCircleContainer figure {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.text {
+  z-index: 1000;
+  color: $white-text;
+}
+.videoCircleContainer figure img {
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+.videoCircleContainer figure .redMask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  background: $border-red;
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  border-radius: 100%;
+  height: 100%;
+}
+.videoCircleContainer figure:hover > .redMask {
+  opacity: 1;
+  visibility: visible;
+}
+.videoCircleContainer figure:hover > .redMask h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.videoCircleContainer figure .redMask h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+.videoCircleContainer figure .redMask p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+}
+
+@media screen and (min-width: "1024px") {
+  .videoSectionContainer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 5%;
+    flex-wrap: wrap;
+  }
+
+  .videoCircleContainer figure .redMask {
+    width: 100%;
+    height: 100%;
   }
 }
