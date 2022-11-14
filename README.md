@@ -1,4 +1,12 @@
-Frontend test
+# Frontend test
+
+###Para correr el proyecto se uso yarn como administrador de dependencias.
+
+Aquí los comando para correr el proyecto:
+
+`yarn install`
+
+`yarn start`
 
 El test está disponible en el siguiente enlace:
 https://landingcountdowntest.netlify.app/
