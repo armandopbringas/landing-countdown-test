@@ -10,3 +10,5 @@ Requerimientos:
 - [x]  El proyecto puedes generarlo con la tecnología que tu gustes
 
 El código de los videos lo puedes tomar de youtube, los videos que sean de su elección.
+
+<img width="708" alt="Screen Shot 2022-11-13 at 23 11 34" src="https://user-images.githubusercontent.com/52949285/201580469-eac069da-49f3-46f6-8a90-b7e95bbed637.png">
